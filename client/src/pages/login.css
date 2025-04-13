@@ -1,0 +1,53 @@
+.login-css {
+  left: 40%;
+  top: 30%;
+  margin-left: 0%;
+  position: absolute;
+  margin-top: 0%;
+}
+
+.form-container {
+  width: 300px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #3e16ce;
+  border-radius: 5px;
+  background-color: #dce4cd;
+}
+
+.form-container label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.form-container input[type="email"],
+.form-container input[type="password"] {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #d63131;
+  border-radius: 3px;
+  box-sizing: border-box;
+}
+
+.form-container button[type="submit"],
+.form-container button[type="button"] {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 3px;
+  background-color: #007bff;
+  color: #fff;
+  cursor: pointer;
+}
+
+.form-container button[type="submit"]:hover,
+.form-container button[type="button"]:hover {
+  background-color: #0056b3;
+}
+
+.create-account-link {
+  display: block;
+  text-align: center;
+  margin-top: 10px;
+}

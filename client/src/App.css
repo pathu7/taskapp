@@ -1,0 +1,183 @@
+.App {
+  text-align: center;
+
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+
+}
+
+.App-link {
+  color: #61dafb;
+  left: 50%;
+  top: 50%;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.task-manager {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.task-columns {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.task-column {
+  width: 30%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: #f1f1f1;
+}
+
+.task-column h2 {
+  text-align: center;
+}
+
+.task-form {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  margin-bottom: 20px;
+  border: 30px solid #f1f1f1;
+  background-color: #f1f1f1;
+  border-radius: 10px;
+}
+
+.task-form input,
+.task-form textarea {
+  margin: 10px 0;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.task-form button {
+  padding: 10px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.task-form button:hover {
+  background-color: #45a049;
+}
+
+.task-item {
+  margin-bottom: 10px;
+  padding: 15px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  cursor: move;
+}
+
+.task-item button {
+  margin-top: 10px;
+  background-color: red;
+  color: white;
+  border: none;
+  border-radius: 50px;
+  padding: 15px;
+  cursor: pointer;
+}
+
+.task-item button:hover {
+  background-color: darkred;
+}
+
+/* General styling for the select element */
+select {
+  width: 100%;
+  padding: 12px 16px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+  background-color: #fff;
+  color: #333;
+  transition: all 0.3s ease;
+}
+
+/* On hover, add a slight shadow to indicate focus */
+select:hover {
+  border-color: #4caf50;
+  /* Change border color on hover */
+}
+
+/* On focus, add a slight shadow effect */
+select:focus {
+  border-color: #4caf50;
+  /* Green border on focus */
+  outline: none;
+  /* Remove the default outline */
+  box-shadow: 0 0 5px rgba(76, 175, 80, 0.5);
+  /* Shadow for focus */
+}
+
+/* Style for the default "Select assign name" option */
+option {
+  padding: 10px;
+  background-color: #fff;
+  color: #333;
+}
+
+/* Remove the default dropdown arrow and apply custom arrow */
+select {
+  -webkit-appearance: none;
+  /* Removes the default dropdown on Safari */
+  -moz-appearance: none;
+  /* Removes the default dropdown on Firefox */
+  appearance: none;
+  /* Removes the default dropdown on modern browsers */
+  background-image: url('data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 20 20%22 fill=%22none%22 stroke=%22currentColor%22%3E%3Cpath d=%22M5 7l5 5 5-5%22/%3E%3C/svg%3E');
+  background-repeat: no-repeat;
+  background-position: right 10px center;
+  /* Position the custom arrow */
+  background-size: 16px;
+}
+
+/* Padding for select to make space for the custom arrow */
+select {
+  padding-right: 40px;
+}
+
+/* Custom styles for the placeholder option (Select assign name) */
+select option:first-child {
+  color: #999;
+}
